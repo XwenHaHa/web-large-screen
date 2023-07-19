@@ -4,6 +4,14 @@ import Layout from '@/layouts'
 
 const routes = [
   {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/login/index.vue'),
+    meta: {
+      title: '登录页'
+    }
+  },
+  {
     path: '/',
     component: Layout,
     redirect: '/homepage',
